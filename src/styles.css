@@ -278,26 +278,32 @@ button {
 .board-shell {
   display: grid;
   gap: 10px;
+  justify-items: center;
 }
 
 .board-engine {
-  min-height: 560px;
-  width: 100%;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
   border-radius: 28px;
   overflow: hidden;
+  line-height: 0;
   background: linear-gradient(180deg, rgba(255, 250, 240, 0.72), rgba(247, 236, 214, 0.92));
 }
 
-.board-engine .Goban {
-  width: 100%;
-  height: 100%;
+.board-engine .StoneLayer,
+.board-engine .ShadowLayer,
+.board-engine .PenLayer,
+.board-engine .GobanMessage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .board-engine canvas,
 .board-engine svg {
   display: block;
-  margin: 0 auto;
-  max-width: 100%;
 }
 
 .board-caption {
@@ -392,7 +398,7 @@ button {
   }
 
   .board-engine {
-    min-height: 360px;
+    max-width: 100%;
   }
 
   .problem-row h3 {
