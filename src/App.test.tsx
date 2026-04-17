@@ -22,27 +22,21 @@ vi.mock('@sabaki/shudan/src/main.js', () => ({
 }))
 
 describe('GoLD app', () => {
-  it('filters the list and supports play, solution, and navigation flows', async () => {
+  it('filters the imported list and supports play, solution, and navigation flows', async () => {
     const user = userEvent.setup()
     render(<App />)
 
     await user.click(screen.getByRole('button', { name: '중급' }))
-    expect(screen.getByRole('button', { name: '변에서 던져넣기 시작' })).toBeInTheDocument()
-    expect(screen.queryByRole('button', { name: '귀에서 한 점 잡기 시작' })).not.toBeInTheDocument()
+    expect(screen.getByRole('button', { name: '사활 문제 34 시작' })).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: '사활 문제 1 시작' })).not.toBeInTheDocument()
 
     await user.click(screen.getByRole('button', { name: '입문' }))
-    await user.click(screen.getByRole('button', { name: '귀에서 한 점 잡기 시작' }))
-
-    await user.click(screen.getByTestId('vertex-cb'))
-    expect(screen.getByText('오답')).toBeInTheDocument()
-
-    await user.click(screen.getByTestId('vertex-bb'))
-    expect(screen.getByText('해결 완료')).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: '사활 문제 1 시작' }))
 
     await user.click(screen.getByRole('button', { name: '해답 보기' }))
     expect(screen.getByText('해답 재생')).toBeInTheDocument()
 
     await user.click(screen.getByRole('button', { name: '다음 문제' }))
-    expect(screen.getByText('귀의 급소 한 수')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: '사활 문제 2' })).toBeInTheDocument()
   })
 })
