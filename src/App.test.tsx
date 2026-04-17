@@ -8,7 +8,6 @@ vi.mock('goban', () => ({
   setGobanRenderer: vi.fn(),
   Goban: { setCallbacks: vi.fn() },
   createGoban: vi.fn(() => ({
-    on: vi.fn(),
     destroy: vi.fn(),
   })),
 }))
@@ -27,6 +26,7 @@ describe('GoLD app', () => {
     expect(screen.getAllByRole('listitem').length).toBeGreaterThan(0)
     await user.click(screen.getByRole('button', { name: '사활 문제 1 시작' }))
 
+    expect(screen.getByRole('button', { name: 'play-cr' })).toBeInTheDocument()
     await user.click(screen.getByRole('button', { name: '해답 보기' }))
     expect(screen.getByText('해답 재생')).toBeInTheDocument()
 
