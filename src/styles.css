@@ -278,32 +278,58 @@ button {
 .board-shell {
   display: grid;
   gap: 10px;
-  justify-items: center;
 }
 
-.board-engine {
+.board-frame {
+  width: 100%;
+  overflow: auto;
+  display: grid;
+  justify-content: center;
+}
+
+.board-stage {
   position: relative;
-  display: inline-block;
-  max-width: 100%;
   border-radius: 28px;
   overflow: hidden;
   line-height: 0;
   background: linear-gradient(180deg, rgba(255, 250, 240, 0.72), rgba(247, 236, 214, 0.92));
 }
 
-.board-engine .StoneLayer,
-.board-engine .ShadowLayer,
-.board-engine .PenLayer,
-.board-engine .GobanMessage {
+.board-surface {
+  position: relative;
+}
+
+.board-surface .StoneLayer,
+.board-surface .ShadowLayer,
+.board-surface .PenLayer,
+.board-surface .GobanMessage {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
 }
 
-.board-engine canvas,
-.board-engine svg {
+.board-surface canvas,
+.board-surface svg {
   display: block;
+}
+
+.board-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.board-hitbox {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.board-hitbox:hover {
+  background: rgba(13, 102, 94, 0.14);
 }
 
 .board-caption {
@@ -397,7 +423,11 @@ button {
     padding: 18px;
   }
 
-  .board-engine {
+  .board-frame {
+    width: 100%;
+  }
+
+  .board-stage {
     max-width: 100%;
   }
 
