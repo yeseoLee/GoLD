@@ -1,0 +1,128 @@
+(
+;
+FF[1]
+GM[1]
+SZ[19]
+AP[Jago:Version 6.2]
+AB[ar][br][bs][cq][dq][eq]
+AW[aq][bq][cr][cp][bo][ep][fp][fq][fr][fs]
+GN[life_problem_0042]
+C[Black to live in one move.]
+(
+;
+B[ds]
+C[Correct move. White can't prevent black from forming two eyes here.]
+(
+;
+W[dr]
+C[White has two options, either way black lives.]
+;
+B[er]
+(
+;
+W[es]
+C[White has two options, either way black lives.]
+;
+B[cs]
+(
+;
+W[dp]
+;
+B[cr]
+)
+(
+;
+W[cr]
+;
+B[dr]
+)
+)
+(
+;
+W[dp]
+C[Black still lives.]
+;
+B[cs]
+;
+W[es]
+;
+B[dr]
+)
+)
+(
+;
+W[es]
+C[Black still lives.]
+;
+B[dr]
+;
+W[dp]
+;
+B[cs]
+;
+W[er]
+)
+)
+(
+;
+B[dr]
+C[Wrong move. White can easily prevent black from forming an eye.]
+(
+;
+W[ds]
+C[This is the correct move for white, black dies.]
+;
+B[cs]
+(
+;
+W[er]
+C[Mistake for white, black lives.]
+;
+B[es]
+;
+W[dp]
+;
+B[ds]
+)
+(
+;
+W[es]
+C[This is the correct move for white, black dies.]
+;
+B[dp]
+;
+W[do]
+;
+B[er]
+;
+W[cr]
+;
+B[lq]
+;
+W[as]
+)
+)
+(
+;
+W[cs]
+C[Mistake for white.]
+;
+B[ds]
+;
+W[cs]
+;
+B[cr]
+)
+(
+;
+W[es]
+C[Mistake for white.]
+;
+B[ds]
+;
+W[dp]
+;
+B[cs]
+)
+)
+)

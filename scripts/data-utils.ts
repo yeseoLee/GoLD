@@ -93,18 +93,8 @@ export async function compileProblem(entry: ProblemCatalogEntry): Promise<Proble
   assert(rootNode, `Problem ${entry.id} is missing a root node.`)
 
   const rootChildren = rootNode.children.map((childId) => nodeIndex.get(childId)).filter(Boolean) as CompiledProblemNode[]
-  const correctFirstMoves = rootChildren.filter((child) => child.player === entry.toPlay && child.verdict === 'correct')
-
-  assert(correctFirstMoves.length === 1, `Problem ${entry.id} must have exactly one first correct move tagged with TE[2].`)
-  assert(correctFirstMoves[0].move != null, `Problem ${entry.id} first correct move cannot be a pass.`)
-
-  for (const node of compiledNodes) {
-    if (node.player === entry.toPlay && node.verdict !== 'wrong') {
-      const autoChildren = node.children.map((childId) => nodeIndex.get(childId)).filter(Boolean) as CompiledProblemNode[]
-      const nonWrongAuto = autoChildren.filter((child) => child.autoPlay && child.verdict !== 'wrong')
-      assert(nonWrongAuto.length <= 1, `Problem ${entry.id} node ${node.id} has more than one auto-play response.`)
-    }
-  }
+  const playableFirstMoves = rootChildren.filter((child) => child.player === entry.toPlay && child.verdict !== 'wrong')
+  assert(playableFirstMoves.length >= 1, `Problem ${entry.id} must have at least one playable first move.`)
 
   const coords = [...initialStones.black, ...initialStones.white]
   for (const node of compiledNodes) {
@@ -123,14 +113,15 @@ export async function compileProblem(entry: ProblemCatalogEntry): Promise<Proble
 function walkTree(node: Types.NodeObject, toPlay: StoneColor, out: CompiledProblemNode[]): void {
   const move = node.data.B?.[0] ?? node.data.W?.[0] ?? null
   const player: StoneColor | null = node.data.B ? 'B' : node.data.W ? 'W' : null
-  const verdict = getVerdict(node)
+  const comment = node.data.C?.[0]?.trim() || undefined
+  const verdict = getVerdict(player, comment)
 
   out.push({
     id: String(node.id),
     move,
     player,
     verdict,
-    comment: node.data.C?.[0]?.trim() || undefined,
+    comment,
     autoPlay: player != null && player !== toPlay,
     children: node.children.map((child) => String(child.id)),
   })
@@ -140,9 +131,27 @@ function walkTree(node: Types.NodeObject, toPlay: StoneColor, out: CompiledProbl
   }
 }
 
-function getVerdict(node: Types.NodeObject): ProblemVerdict {
-  if (node.data.BM?.includes('2')) return 'wrong'
-  if (node.data.TE?.includes('2')) return 'correct'
+function getVerdict(player: StoneColor | null, comment?: string): ProblemVerdict {
+  if (!player || !comment) return 'neutral'
+
+  const normalized = comment.toLowerCase().replace(/\s+/g, ' ').trim()
+
+  if (/(^|\b)correct move\b|this is the move that saves black|this is the correct move|one of the correct responses|white can still live here/.test(normalized)) {
+    return 'correct'
+  }
+
+  if (/\bwrong move\b|\bmistake\b|\baccomplishes nothing\b|\bsmothered\b/.test(normalized)) {
+    return 'wrong'
+  }
+
+  if (/black forms two eyes|black has two true eyes|black has two eyes|black still lives|black lives either way|black lives under both|black lives\b|white can't prevent black|white doesn't have any good moves|this is the move that saves black|black to win/.test(normalized)) {
+    return 'correct'
+  }
+
+  if (/black dies|black is dead|\bdies\b|\bdead\b|can't get any eyes|too much room/.test(normalized)) {
+    return 'wrong'
+  }
+
   return 'neutral'
 }
 

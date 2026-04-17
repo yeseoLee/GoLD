@@ -1,0 +1,103 @@
+(
+;
+FF[1]
+GM[1]
+SZ[19]
+AP[Jago:Version 6.2]
+AB[ar][bq][cq][dq][dr]
+AW[ap][aq][bp][cp][dp][ep][eq][er][es][cr]
+GN[life_problem_24]
+C[Black to live in 1 move.]
+(
+;
+B[cs]
+C[This is the move that saves black. Puts white in atari with plenty of room for two eyes. Whether white ignores atari or tries to run out, black's capture will create two eyes.]
+(
+;
+W[br]
+C[White runs out in vain, black captures them creating two eyes.]
+;
+B[bs]
+;
+W[ds]
+;
+B[br]
+)
+(
+;
+W[ds]
+C[White ignores the inevitable atari, but white's move doesn't threaten the stones it touches.]
+;
+B[br]
+;
+W[bs]
+;
+B[as]
+)
+(
+;
+W[bs]
+C[White ignores the atari again, trying to take a key point instead. It accomplishes nothing.]
+;
+B[br]
+;
+W[ds]
+;
+B[as]
+)
+)
+(
+;
+B[ds]
+C[This is a mistake for black as it forms bulky five in gote, and not even a connected bulky five.]
+(
+;
+W[as]
+C[This is a big mistake for white and allows black to live after all.]
+;
+B[br]
+;
+W[bs]
+;
+B[cs]
+;
+W[bs]
+;
+B[as]
+)
+(
+;
+W[cs]
+C[This is one of the correct responses for white.]
+;
+B[br]
+;
+W[bs]
+;
+B[as]
+;
+W[cs]
+;
+B[bs]
+;
+W[cr]
+)
+(
+;
+W[br]
+C[This is one of the correct responses for white.]
+;
+B[bs]
+;
+W[as]
+;
+B[jr]
+;
+W[ar]
+;
+B[js]
+;
+W[cs]
+)
+)
+)

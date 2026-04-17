@@ -1,0 +1,58 @@
+(
+;
+FF[1]
+GM[1]
+SZ[19]
+AP[Jago:Version 6.2]
+AB[ar][bq][bp][ap][cq][dq][dr]
+AW[cr][cs][ds][er][eq][ep][dp][cp][ao][bo][cn]
+C[Black to live in 1 move.]
+GN[life_problem_0035]
+(
+;
+B[br]
+C[Wrong move. Black forms one eye is smothered.]
+(
+;
+W[es]
+C[Mistake for white, black lives.]
+;
+B[bs]
+)
+(
+;
+W[bs]
+C[Corrrect move for white, black dies.]
+;
+B[as]
+;
+W[aq]
+)
+)
+(
+;
+B[bs]
+C[Correct move. White can't prevent black from forming two eyes without putting her own stones in atari, and then black connecting anyway.]
+(
+;
+W[br]
+C[Whie has two options here, black lives under both.]
+;
+B[es]
+;
+W[ds]
+;
+B[cs]
+;
+W[jr]
+;
+B[ds]
+)
+(
+;
+W[es]
+;
+B[br]
+)
+)
+)

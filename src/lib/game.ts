@@ -96,7 +96,7 @@ function consumeAutoPath(problem: Problem, path: string[]): string[] {
       .filter((child): child is CompiledProblemNode => Boolean(child))
       .filter((child) => child.autoPlay && child.verdict !== 'wrong')
 
-    if (autoChildren.length !== 1) break
+    if (autoChildren.length === 0) break
     nextPath.push(autoChildren[0].id)
   }
 

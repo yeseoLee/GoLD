@@ -1,0 +1,118 @@
+(
+;
+FF[1]
+GM[1]
+SZ[19]
+AP[Jago:Version 6.2]
+AB[ar][aq][bq][cq][dq][dr]
+AW[ap][bp][cp][dp][ep][eq][er][es][cr][br]
+C[Black to win in 1 move.]
+GN[life_problem_25]
+(
+;
+B[cs]
+C[Wrong move. Black formed the twisted four (aka, dogleg four) in gote when white is already occupying one of the two critical points in it. White will take the other critical point and kill black.]
+;
+W[bs]
+C[White takes the second critical point in twisted four (aka, dogleg four.)]
+;
+B[as]
+;
+W[br]
+(
+;
+B[bs]
+;
+W[ds]
+;
+B[cr]
+;
+W[br]
+)
+(
+;
+B[ds]
+;
+W[cr]
+;
+B[bs]
+;
+W[br]
+;
+B[jr]
+;
+W[cr]
+)
+)
+(
+;
+B[ds]
+C[Wrong move. Black is dead now unless white plays the wrong moves. Black has formed bulky five in gote. If white takes the critical point, black dies. If white doesn't take it, black lives.]
+(
+;
+W[cs]
+C[This is the mistake that would allow black to live.]
+;
+B[bs]
+C[White's moves beyond this point are inconsequential.]
+(
+;
+W[cr]
+;
+B[cs]
+;
+W[jr]
+;
+B[br]
+)
+(
+;
+W[cs]
+;
+B[cr]
+)
+)
+(
+;
+W[bs]
+C[This is the correct move for white, taking the critical point in bulky five. Black is dead now.]
+;
+B[jr]
+;
+W[as]
+;
+B[cs]
+;
+W[bs]
+;
+B[br]
+;
+W[jq]
+;
+B[as]
+)
+)
+(
+;
+B[bs]
+C[Correct move. Black forms one eye and is guaranteed a second eye because white's group cannot escape atari.]
+(
+;
+W[cs]
+C[White tries to run out in vain, gets captured and black lives.]
+;
+B[ds]
+)
+(
+;
+W[ds]
+C[White ignores black's atari, encroaching on the space. The two white stones still die and black forms his second eye, so black lives.]
+;
+B[cs]
+;
+W[br]
+;
+B[cr]
+)
+)
+)

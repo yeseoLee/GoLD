@@ -1,0 +1,158 @@
+(
+;
+FF[1]
+GM[1]
+SZ[19]
+AP[Jago:Version 6.2]
+AB[ar][bq][cq][eq][er][es]
+AW[ds][fs][fr][fq][fp][ep][dp][cp][bp][ap][aq]
+GN[life_problem_0046]
+C[Black to live in one move.]
+(
+;
+B[cs]
+C[Wrong move, white can outflank black.]
+;
+W[dr]
+;
+B[dq]
+(
+;
+W[cr]
+C[Mistake for white, black lives.]
+;
+B[br]
+;
+W[dr]
+;
+B[cr]
+)
+(
+;
+W[br]
+C[Correct move for white, black can't make life now.]
+(
+;
+B[cr]
+C[Black is dead either way.]
+;
+W[as]
+;
+B[bs]
+;
+W[ar]
+;
+B[dr]
+;
+W[ds]
+)
+(
+;
+B[bs]
+C[Black is dead either way.]
+;
+W[cr]
+)
+)
+)
+(
+;
+B[dr]
+C[Wrong move, white can stop black from making life.]
+(
+;
+W[cs]
+C[Fatal mistake for white.]
+;
+B[bs]
+(
+;
+W[cr]
+;
+B[br]
+(
+;
+W[dq]
+C[Black lives either way.]
+;
+B[cr]
+)
+(
+;
+W[cs]
+C[Black lives either way.]
+;
+B[cr]
+)
+)
+(
+;
+W[br]
+;
+B[cr]
+)
+(
+;
+W[dq]
+;
+B[cr]
+;
+W[cs]
+;
+B[ds]
+)
+)
+(
+;
+W[br]
+C[White wins.]
+;
+B[cs]
+;
+W[as]
+;
+B[bs]
+(
+;
+W[cr]
+C[Fatal mistake for white.]
+;
+B[ar]
+)
+(
+;
+W[ar]
+C[White wins.]
+;
+B[cr]
+;
+W[dq]
+;
+B[jq]
+;
+W[ds]
+)
+)
+)
+(
+;
+B[cr]
+C[Correct move, black can easily form two eyes.]
+;
+W[bs]
+;
+B[cs]
+;
+W[dq]
+;
+B[dr]
+;
+W[br]
+;
+B[as]
+;
+W[bs]
+;
+B[br]
+)
+)

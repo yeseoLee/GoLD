@@ -1,0 +1,100 @@
+(
+;
+FF[1]
+GM[1]
+SZ[19]
+AP[Jago:Version 6.2]
+AB[aq][br][cr][dr][er][es]
+AW[bp][ap][cq][dq][eq][fq][fr][fs][cs]
+GN[life_problem_21]
+C[Black to live in 1 move. I thought the bent five formed by one move could save black, but I was wrong. This situation requires a more aggressive move that puts white in atari while forming two eyes.]
+(
+;
+B[bq]
+C[This is not the solution in the book, but I can't find any way for white to kill this group. This is a bent five in a corner.]
+(
+;
+W[as]
+C[This is a mistake for white. The critical point is now between the two white stones. Black will play there, forming two eyes and putting both of white's dead stones in atari.]
+;
+B[bs]
+C[Black forms two eyes and white's stones are dead.]
+;
+W[kr]
+;
+B[ds]
+;
+W[kq]
+;
+B[ar]
+)
+(
+;
+W[bs]
+C[White sealed black's fate here by taking the key point in the bent five. Black cannot put white in atari without turning the bent five into a bent four. Black can place a stone in atari, but white will capture.]
+(
+;
+B[as]
+C[Black thinks they've formed two eyes, but they've put themselves in atari. White will capture, putting all of its blacks stones in atari. White cannot recapture becaue of ko.]
+(
+;
+W[jr]
+C[I didn't realize that black's corner piece is in atari. See variation.]
+;
+B[ds]
+)
+(
+;
+W[ar]
+;
+B[jr]
+;
+W[ds]
+)
+)
+(
+;
+B[ar]
+C[Big mistake for black, forming a straight four in gote with both key points taken.]
+;
+W[as]
+;
+B[ds]
+;
+W[bs]
+;
+B[cs]
+;
+W[as]
+)
+(
+;
+B[ds]
+C[Black killed itself by forming a bent four in gote.]
+;
+W[as]
+;
+B[ar]
+;
+W[bs]
+;
+B[cs]
+;
+W[as]
+)
+)
+)
+(
+;
+B[bs]
+C[Black puts white in atari and gets two eyes. This is the solution in the book.]
+;
+W[bq]
+;
+B[ar]
+;
+W[jr]
+;
+B[ds]
+)
+)

@@ -1,0 +1,69 @@
+(
+;
+FF[1]
+GM[1]
+SZ[19]
+AP[Jago:Version 6.2]
+AB[ar][br][dr][ds][er][fr][fs]
+AW[cr][cp][bq][aq][dq][eq][fq][gq][gr][gs]
+GN[life_problem_0028]
+C[Black to live in 1 move.]
+(
+;
+B[cs]
+C[This isn't the book's solution, but it still seems unassailable.]
+(
+;
+W[bs]
+C[Black lives regardless of what move white makes here.]
+(
+;
+B[as]
+C[This is a mistake for black, capturing one stone only to lose three stones.]
+;
+W[bs]
+;
+B[jr]
+;
+W[es]
+)
+(
+;
+B[cq]
+C[This is black's correct move. White can't recapture because of ko, and the stone in black's territory is dead.]
+;
+W[bp]
+;
+B[cr]
+)
+)
+(
+;
+W[cq]
+C[Alternate move, but black still lives.]
+;
+B[bs]
+)
+)
+(
+;
+B[bs]
+C[This is the solution in the book. Black forms an eye and white can't prevent black from bridging the two groups.]
+(
+;
+W[cs]
+;
+B[cq]
+;
+W[dp]
+;
+B[cr]
+)
+(
+;
+W[cq]
+;
+B[cs]
+)
+)
+)
