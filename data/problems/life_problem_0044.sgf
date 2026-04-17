@@ -1,0 +1,84 @@
+(
+;
+FF[1]
+GM[1]
+SZ[19]
+AP[Jago:Version 6.2]
+AB[br][cr][bq][cp][dp][eq][er][es]
+AW[ds][bs][ar][aq][bp][bo][co][do][ep][fp][fr][fq][fs]
+GN[life_problem_0044]
+C[Black to live in one move.]
+(
+;
+B[cs]
+C[Wrong move for black. Black's three separated groups can't possibly connect and form two eyes in time.]
+(
+;
+W[dr]
+C[Mistake for white, black lives.]
+;
+B[dq]
+)
+(
+;
+W[dq]
+C[Correct move for white, black dies.]
+(
+;
+B[dr]
+C[White has two options here, both end in death.]
+;
+W[cq]
+;
+B[as]
+;
+W[ap]
+;
+B[bs]
+;
+W[ds]
+)
+(
+;
+B[cq]
+;
+W[dr]
+)
+)
+)
+(
+;
+B[dr]
+C[Correct move, black can solidly connect the inner eye, and form a second eye on the edge of the board.]
+(
+;
+W[ap]
+;
+B[cs]
+)
+(
+;
+W[dq]
+;
+B[cq]
+;
+W[as]
+;
+B[cs]
+)
+(
+;
+W[cq]
+;
+B[dq]
+;
+W[cs]
+;
+B[as]
+;
+W[ap]
+;
+B[bs]
+)
+)
+)

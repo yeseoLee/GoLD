@@ -1,0 +1,82 @@
+(
+;
+FF[1]
+GM[1]
+SZ[19]
+AP[Jago:Version 6.2]
+AB[bs][bq][bp][cp][dq][dr][ds]
+AW[ar][ap][ao][bo][co][dp][ep][eq][er][es]
+GN[life_problem_0038]
+C[Black to live in 1 move.]
+(
+;
+B[cr]
+C[Wrong move, unless white makes a mistake, black dies.]
+(
+;
+W[br]
+C[Black dies if white invades like this.]
+;
+B[aq]
+(
+;
+W[do]
+C[Mistake for white, black lives.]
+;
+B[as]
+;
+W[br]
+;
+B[ar]
+)
+(
+;
+W[cq]
+C[White captures half of black's stones, the rest fall soon after.]
+;
+B[as]
+;
+W[cs]
+)
+)
+(
+;
+W[aq]
+C[White connects, but that just allows black to connect.]
+;
+B[br]
+)
+(
+;
+W[as]
+C[Another bad move for white.]
+;
+B[br]
+;
+W[aq]
+)
+)
+(
+;
+B[br]
+C[Correct move. Black has two ways to form two eyes now, white can only prevent one of them.]
+(
+;
+W[cr]
+;
+B[aq]
+;
+W[cs]
+;
+B[cq]
+)
+(
+;
+W[aq]
+;
+B[cr]
+;
+W[as]
+)
+)
+)

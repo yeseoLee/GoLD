@@ -1,0 +1,59 @@
+(
+;
+FF[1]
+GM[1]
+SZ[19]
+AP[Jago:Version 6.2]
+AB[as][ar][cr][dr][er][es]
+AW[bs][ds][ap][bp][cq][dq][eq][fq][fr][fs]
+GN[life_problem_22]
+C[Black to live in 1 move. Don't let the prospect of a straight three fool you.]
+(
+;
+B[cs]
+C[I thought this was the right move, black has formed one eye and seems guaranteed to get a second. However, black's two groups are disconnected in gote and white will either capture the left group or force black to connect them in a way that leaves no room for a second eye.]
+(
+;
+W[br]
+C[This is the smart move for white. Black has to capture in a way that leaves the capturing stone disconnected and surrounded. Black will inveitably lose more stones or reinforce to the point they can't form a second eye.]
+;
+B[bq]
+(
+;
+W[aq]
+C[This is a mistake for white that lets black live. They should invade black's big eye, taking advantage of the unconnected stone instead of encouraging its defense.]
+;
+B[br]
+)
+(
+;
+W[br]
+C[This is the correct move for white that seals black's fate.]
+;
+B[bs]
+;
+W[aq]
+;
+B[br]
+;
+W[ds]
+)
+)
+(
+;
+W[bq]
+C[Big mistake for white. Black gets to form his second eye and capture white's stone.]
+;
+B[br]
+)
+)
+(
+;
+B[br]
+C[This is the move that guarantees black's life, as given in the book. It would be an illegal move for white to take the critical (middle) point in the straight three. If black's groups had been surrounded from the outside, this would be a very different situation.]
+;
+W[bq]
+;
+B[cs]
+)
+)

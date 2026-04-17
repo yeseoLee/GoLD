@@ -1,0 +1,55 @@
+(
+;
+FF[1]
+GM[1]
+SZ[19]
+AP[Jago:Version 6.2]
+AB[br][bs][cr][dr][ds][dq][fr]
+AW[ar][bq][cq][dp][ep][co][fq][gq][gr]
+GN[life_problem_0036]
+C[Black to live in 1 move.]
+(
+;
+B[fs]
+C[Corect move. White can't prevent black from forming two eyes now.]
+(
+;
+W[eq]
+;
+B[er]
+)
+(
+;
+W[er]
+;
+B[eq]
+;
+W[gs]
+;
+B[es]
+)
+)
+(
+;
+B[er]
+C[Mistake, white can easily invade, denying black the second eye.]
+;
+W[fs]
+;
+B[es]
+;
+W[gs]
+;
+B[eq]
+;
+W[aq]
+;
+B[lq]
+;
+W[as]
+;
+B[lr]
+;
+W[cs]
+)
+)

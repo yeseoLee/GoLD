@@ -1,0 +1,62 @@
+(
+;
+FF[1]
+GM[1]
+SZ[19]
+AP[Jago:Version 6.2]
+AB[bs][aq][bq][cq][dq][dr]
+AW[ar][cr][ds][er][eq][ep][dp][cp][bp]
+GN[life_problem_0037]
+C[Black to live in 1 move.]
+(
+;
+B[br]
+C[Correct move. Black formed one solid eye, connected all of its groups, and white can't block the second eye without getting captured in the process, allowing the eye anyway.]
+(
+;
+W[es]
+C[White has three options here, all of which end with black living.]
+;
+B[cs]
+)
+(
+;
+W[cs]
+;
+B[es]
+;
+W[ds]
+;
+B[cs]
+)
+(
+;
+W[ap]
+;
+B[cs]
+)
+)
+(
+;
+B[cs]
+C[Obviousely the wrong move.]
+;
+W[br]
+;
+B[as]
+;
+W[br]
+;
+B[cr]
+;
+W[es]
+;
+B[ap]
+;
+W[ao]
+;
+B[ar]
+;
+W[br]
+)
+)

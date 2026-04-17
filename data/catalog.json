@@ -1,49 +1,613 @@
 [
   {
-    "id": "corner-capture-1",
-    "slug": "corner-capture-1",
-    "titleKo": "귀에서 한 점 잡기",
+    "id": "life_problem_0001",
+    "slug": "life-problem-0001",
+    "titleKo": "사활 문제 1",
     "difficulty": "beginner",
-    "tags": ["capture", "corner", "life-and-death"],
-    "sourceId": "wikimedia-tsumego-q1",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsumego_q1.png",
-    "license": "Public Domain",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0001.sgf",
+    "license": "GPL-3.0",
     "boardSize": 19,
     "toPlay": "B"
   },
   {
-    "id": "vital-eye-1",
-    "slug": "vital-eye-1",
-    "titleKo": "귀의 급소 한 수",
+    "id": "life_problem_0002",
+    "slug": "life-problem-0002",
+    "titleKo": "사활 문제 2",
+    "difficulty": "beginner",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0002.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0004",
+    "slug": "life-problem-0004",
+    "titleKo": "사활 문제 4",
+    "difficulty": "beginner",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0004.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0005",
+    "slug": "life-problem-0005",
+    "titleKo": "사활 문제 5",
+    "difficulty": "beginner",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0005.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0006",
+    "slug": "life-problem-0006",
+    "titleKo": "사활 문제 6",
+    "difficulty": "beginner",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0006.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0009",
+    "slug": "life-problem-0009",
+    "titleKo": "사활 문제 9",
+    "difficulty": "beginner",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0009.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0010",
+    "slug": "life-problem-0010",
+    "titleKo": "사활 문제 10",
+    "difficulty": "beginner",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0010.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0011",
+    "slug": "life-problem-0011",
+    "titleKo": "사활 문제 11",
+    "difficulty": "beginner",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0011.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0012",
+    "slug": "life-problem-0012",
+    "titleKo": "사활 문제 12",
+    "difficulty": "beginner",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0012.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0013",
+    "slug": "life-problem-0013",
+    "titleKo": "사활 문제 13",
+    "difficulty": "beginner",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0013.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0015",
+    "slug": "life-problem-0015",
+    "titleKo": "사활 문제 15",
+    "difficulty": "beginner",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0015.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0016",
+    "slug": "life-problem-0016",
+    "titleKo": "사활 문제 16",
+    "difficulty": "beginner",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0016.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0017",
+    "slug": "life-problem-0017",
+    "titleKo": "사활 문제 17",
+    "difficulty": "beginner",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0017.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0021",
+    "slug": "life-problem-0021",
+    "titleKo": "사활 문제 21",
     "difficulty": "easy",
-    "tags": ["eye-shape", "corner", "life-and-death"],
-    "sourceId": "wikimedia-tsumego-q1-answer",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsumego_q1a.png",
-    "license": "Public Domain",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0021.sgf",
+    "license": "GPL-3.0",
     "boardSize": 19,
     "toPlay": "B"
   },
   {
-    "id": "center-net-1",
-    "slug": "center-net-1",
-    "titleKo": "중앙 망 보기",
+    "id": "life_problem_0022",
+    "slug": "life-problem-0022",
+    "titleKo": "사활 문제 22",
     "difficulty": "easy",
-    "tags": ["net", "capture", "center"],
-    "sourceId": "wikimedia-hatsuyoron-120",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hatsuyoron_-_problem_120.png",
-    "license": "Public Domain Mark 1.0",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0022.sgf",
+    "license": "GPL-3.0",
     "boardSize": 19,
     "toPlay": "B"
   },
   {
-    "id": "edge-throw-in-1",
-    "slug": "edge-throw-in-1",
-    "titleKo": "변에서 던져넣기",
+    "id": "life_problem_0023",
+    "slug": "life-problem-0023",
+    "titleKo": "사활 문제 23",
+    "difficulty": "easy",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0023.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0024",
+    "slug": "life-problem-0024",
+    "titleKo": "사활 문제 24",
+    "difficulty": "easy",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0024.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0025",
+    "slug": "life-problem-0025",
+    "titleKo": "사활 문제 25",
+    "difficulty": "easy",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live",
+      "black-to-win"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0025.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0026",
+    "slug": "life-problem-0026",
+    "titleKo": "사활 문제 26",
+    "difficulty": "easy",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0026.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0027",
+    "slug": "life-problem-0027",
+    "titleKo": "사활 문제 27",
+    "difficulty": "easy",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0027.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0028",
+    "slug": "life-problem-0028",
+    "titleKo": "사활 문제 28",
+    "difficulty": "easy",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0028.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0029",
+    "slug": "life-problem-0029",
+    "titleKo": "사활 문제 29",
+    "difficulty": "easy",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0029.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0030",
+    "slug": "life-problem-0030",
+    "titleKo": "사활 문제 30",
+    "difficulty": "easy",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0030.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0031",
+    "slug": "life-problem-0031",
+    "titleKo": "사활 문제 31",
+    "difficulty": "easy",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0031.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0032",
+    "slug": "life-problem-0032",
+    "titleKo": "사활 문제 32",
+    "difficulty": "easy",
+    "tags": [
+      "life-and-death",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0032.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0033",
+    "slug": "life-problem-0033",
+    "titleKo": "사활 문제 33",
+    "difficulty": "easy",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0033.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0034",
+    "slug": "life-problem-0034",
+    "titleKo": "사활 문제 34",
     "difficulty": "medium",
-    "tags": ["throw-in", "edge", "life-and-death"],
-    "sourceId": "wikimedia-hatsuyoron-120",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hatsuyoron_-_problem_120.png",
-    "license": "Public Domain Mark 1.0",
+    "tags": [
+      "life-and-death"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0034.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0035",
+    "slug": "life-problem-0035",
+    "titleKo": "사활 문제 35",
+    "difficulty": "medium",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0035.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0036",
+    "slug": "life-problem-0036",
+    "titleKo": "사활 문제 36",
+    "difficulty": "medium",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0036.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0037",
+    "slug": "life-problem-0037",
+    "titleKo": "사활 문제 37",
+    "difficulty": "medium",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0037.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0038",
+    "slug": "life-problem-0038",
+    "titleKo": "사활 문제 38",
+    "difficulty": "medium",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0038.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0039",
+    "slug": "life-problem-0039",
+    "titleKo": "사활 문제 39",
+    "difficulty": "medium",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0039.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0040",
+    "slug": "life-problem-0040",
+    "titleKo": "사활 문제 40",
+    "difficulty": "medium",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0040.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0041",
+    "slug": "life-problem-0041",
+    "titleKo": "사활 문제 41",
+    "difficulty": "medium",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0041.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0042",
+    "slug": "life-problem-0042",
+    "titleKo": "사활 문제 42",
+    "difficulty": "medium",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0042.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0043",
+    "slug": "life-problem-0043",
+    "titleKo": "사활 문제 43",
+    "difficulty": "medium",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0043.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0044",
+    "slug": "life-problem-0044",
+    "titleKo": "사활 문제 44",
+    "difficulty": "medium",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0044.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0045",
+    "slug": "life-problem-0045",
+    "titleKo": "사활 문제 45",
+    "difficulty": "medium",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0045.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0046",
+    "slug": "life-problem-0046",
+    "titleKo": "사활 문제 46",
+    "difficulty": "medium",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0046.sgf",
+    "license": "GPL-3.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "life_problem_0047",
+    "slug": "life-problem-0047",
+    "titleKo": "사활 문제 47",
+    "difficulty": "medium",
+    "tags": [
+      "life-and-death",
+      "one-move",
+      "black-to-live"
+    ],
+    "sourceId": "bsinglet-life-and-death",
+    "sourceUrl": "https://github.com/bsinglet/life_and_death_go_problems/blob/master/life_problem_0047.sgf",
+    "license": "GPL-3.0",
     "boardSize": 19,
     "toPlay": "B"
   }
