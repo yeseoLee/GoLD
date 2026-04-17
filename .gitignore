@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.DS_Store
+.write-test
+test.txt
+root-config-proposal/
+data/raw/

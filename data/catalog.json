@@ -1,0 +1,50 @@
+[
+  {
+    "id": "corner-capture-1",
+    "slug": "corner-capture-1",
+    "titleKo": "귀에서 한 점 잡기",
+    "difficulty": "beginner",
+    "tags": ["capture", "corner", "life-and-death"],
+    "sourceId": "wikimedia-tsumego-q1",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsumego_q1.png",
+    "license": "Public Domain",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "vital-eye-1",
+    "slug": "vital-eye-1",
+    "titleKo": "귀의 급소 한 수",
+    "difficulty": "easy",
+    "tags": ["eye-shape", "corner", "life-and-death"],
+    "sourceId": "wikimedia-tsumego-q1-answer",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsumego_q1a.png",
+    "license": "Public Domain",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "center-net-1",
+    "slug": "center-net-1",
+    "titleKo": "중앙 망 보기",
+    "difficulty": "easy",
+    "tags": ["net", "capture", "center"],
+    "sourceId": "wikimedia-hatsuyoron-120",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hatsuyoron_-_problem_120.png",
+    "license": "Public Domain Mark 1.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  },
+  {
+    "id": "edge-throw-in-1",
+    "slug": "edge-throw-in-1",
+    "titleKo": "변에서 던져넣기",
+    "difficulty": "medium",
+    "tags": ["throw-in", "edge", "life-and-death"],
+    "sourceId": "wikimedia-hatsuyoron-120",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hatsuyoron_-_problem_120.png",
+    "license": "Public Domain Mark 1.0",
+    "boardSize": 19,
+    "toPlay": "B"
+  }
+]

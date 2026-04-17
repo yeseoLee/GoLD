@@ -1,0 +1,341 @@
+[
+  {
+    "id": "corner-capture-1",
+    "slug": "corner-capture-1",
+    "titleKo": "귀에서 한 점 잡기",
+    "difficulty": "beginner",
+    "tags": [
+      "capture",
+      "corner",
+      "life-and-death"
+    ],
+    "sourceId": "wikimedia-tsumego-q1",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsumego_q1.png",
+    "license": "Public Domain",
+    "boardSize": 19,
+    "toPlay": "B",
+    "initialStones": {
+      "black": [
+        "aa",
+        "ca",
+        "ab"
+      ],
+      "white": [
+        "ba"
+      ]
+    },
+    "viewport": {
+      "top": 0,
+      "left": 0,
+      "width": 7,
+      "height": 7
+    },
+    "rootNodeId": "0",
+    "nodes": [
+      {
+        "id": "0",
+        "move": null,
+        "player": null,
+        "verdict": "neutral",
+        "comment": "흑 차례. 백 한 점을 잡아 보세요.",
+        "autoPlay": false,
+        "children": [
+          "1",
+          "3"
+        ]
+      },
+      {
+        "id": "1",
+        "move": "bb",
+        "player": "B",
+        "verdict": "correct",
+        "comment": "정답. 백 한 점을 포획합니다.",
+        "autoPlay": false,
+        "children": [
+          "2"
+        ]
+      },
+      {
+        "id": "2",
+        "move": "",
+        "player": "W",
+        "verdict": "neutral",
+        "comment": "끝",
+        "autoPlay": true,
+        "children": []
+      },
+      {
+        "id": "3",
+        "move": "cb",
+        "player": "B",
+        "verdict": "wrong",
+        "comment": "오답. 백이 아직 잡히지 않습니다.",
+        "autoPlay": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "vital-eye-1",
+    "slug": "vital-eye-1",
+    "titleKo": "귀의 급소 한 수",
+    "difficulty": "easy",
+    "tags": [
+      "eye-shape",
+      "corner",
+      "life-and-death"
+    ],
+    "sourceId": "wikimedia-tsumego-q1-answer",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsumego_q1a.png",
+    "license": "Public Domain",
+    "boardSize": 19,
+    "toPlay": "B",
+    "initialStones": {
+      "black": [
+        "aa",
+        "ab",
+        "ba",
+        "cb",
+        "bc"
+      ],
+      "white": [
+        "bb",
+        "ca"
+      ]
+    },
+    "viewport": {
+      "top": 0,
+      "left": 0,
+      "width": 7,
+      "height": 7
+    },
+    "rootNodeId": "0",
+    "nodes": [
+      {
+        "id": "0",
+        "move": null,
+        "player": null,
+        "verdict": "neutral",
+        "comment": "흑 차례. 급소에 두어 백을 잡으세요.",
+        "autoPlay": false,
+        "children": [
+          "1",
+          "3"
+        ]
+      },
+      {
+        "id": "1",
+        "move": "ac",
+        "player": "B",
+        "verdict": "correct",
+        "comment": "정답. 백의 눈 모양을 줄여 잡힙니다.",
+        "autoPlay": false,
+        "children": [
+          "2"
+        ]
+      },
+      {
+        "id": "2",
+        "move": "",
+        "player": "W",
+        "verdict": "neutral",
+        "comment": "끝",
+        "autoPlay": true,
+        "children": []
+      },
+      {
+        "id": "3",
+        "move": "cc",
+        "player": "B",
+        "verdict": "wrong",
+        "comment": "오답. 급소를 비껴갔습니다.",
+        "autoPlay": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "center-net-1",
+    "slug": "center-net-1",
+    "titleKo": "중앙 망 보기",
+    "difficulty": "easy",
+    "tags": [
+      "net",
+      "capture",
+      "center"
+    ],
+    "sourceId": "wikimedia-hatsuyoron-120",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hatsuyoron_-_problem_120.png",
+    "license": "Public Domain Mark 1.0",
+    "boardSize": 19,
+    "toPlay": "B",
+    "initialStones": {
+      "black": [
+        "gc",
+        "he",
+        "if",
+        "ig"
+      ],
+      "white": [
+        "hd",
+        "ie"
+      ]
+    },
+    "viewport": {
+      "top": 0,
+      "left": 4,
+      "width": 7,
+      "height": 9
+    },
+    "rootNodeId": "0",
+    "nodes": [
+      {
+        "id": "0",
+        "move": null,
+        "player": null,
+        "verdict": "neutral",
+        "comment": "흑 차례. 중앙의 백 두 점을 망으로 잡으세요.",
+        "autoPlay": false,
+        "children": [
+          "1"
+        ]
+      },
+      {
+        "id": "1",
+        "move": "id",
+        "player": "B",
+        "verdict": "correct",
+        "comment": "정답. 백은 달아날 곳이 없습니다.",
+        "autoPlay": false,
+        "children": [
+          "2"
+        ]
+      },
+      {
+        "id": "2",
+        "move": "hc",
+        "player": "W",
+        "verdict": "neutral",
+        "comment": "백이 버텨 보지만",
+        "autoPlay": true,
+        "children": [
+          "3"
+        ]
+      },
+      {
+        "id": "3",
+        "move": "ib",
+        "player": "B",
+        "verdict": "correct",
+        "comment": "망이 완성됩니다.",
+        "autoPlay": false,
+        "children": [
+          "4"
+        ]
+      },
+      {
+        "id": "4",
+        "move": "",
+        "player": "W",
+        "verdict": "neutral",
+        "comment": "끝",
+        "autoPlay": true,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "edge-throw-in-1",
+    "slug": "edge-throw-in-1",
+    "titleKo": "변에서 던져넣기",
+    "difficulty": "medium",
+    "tags": [
+      "throw-in",
+      "edge",
+      "life-and-death"
+    ],
+    "sourceId": "wikimedia-hatsuyoron-120",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hatsuyoron_-_problem_120.png",
+    "license": "Public Domain Mark 1.0",
+    "boardSize": 19,
+    "toPlay": "B",
+    "initialStones": {
+      "black": [
+        "dd",
+        "ed",
+        "fd",
+        "cf",
+        "df",
+        "ff",
+        "eg"
+      ],
+      "white": [
+        "de",
+        "ee",
+        "ef"
+      ]
+    },
+    "viewport": {
+      "top": 1,
+      "left": 0,
+      "width": 9,
+      "height": 8
+    },
+    "rootNodeId": "0",
+    "nodes": [
+      {
+        "id": "0",
+        "move": null,
+        "player": null,
+        "verdict": "neutral",
+        "comment": "흑 차례. 변에서 던져넣어 백을 잡으세요.",
+        "autoPlay": false,
+        "children": [
+          "1"
+        ]
+      },
+      {
+        "id": "1",
+        "move": "fe",
+        "player": "B",
+        "verdict": "correct",
+        "comment": "정답. 던져넣기로 백의 연결을 끊습니다.",
+        "autoPlay": false,
+        "children": [
+          "2"
+        ]
+      },
+      {
+        "id": "2",
+        "move": "fg",
+        "player": "W",
+        "verdict": "neutral",
+        "comment": "백이 밖으로 버텨도",
+        "autoPlay": true,
+        "children": [
+          "3"
+        ]
+      },
+      {
+        "id": "3",
+        "move": "ge",
+        "player": "B",
+        "verdict": "correct",
+        "comment": "포획 수순이 이어집니다.",
+        "autoPlay": false,
+        "children": [
+          "4"
+        ]
+      },
+      {
+        "id": "4",
+        "move": "",
+        "player": "W",
+        "verdict": "neutral",
+        "comment": "끝",
+        "autoPlay": true,
+        "children": []
+      }
+    ]
+  }
+]

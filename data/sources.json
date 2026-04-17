@@ -1,0 +1,47 @@
+[
+  {
+    "id": "wikimedia-tsumego-q1",
+    "name": "Wikimedia Commons - Tsumego q1",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsumego_q1.png",
+    "license": "Public Domain",
+    "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Tsumego_q1.png",
+    "notes": "Public domain tsumego diagram used as an approved acquisition source.",
+    "assets": [
+      {
+        "id": "diagram",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tsumego_q1.png",
+        "filename": "tsumego-q1.png"
+      }
+    ]
+  },
+  {
+    "id": "wikimedia-tsumego-q1-answer",
+    "name": "Wikimedia Commons - Tsumego q1 answer",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsumego_q1a.png",
+    "license": "Public Domain",
+    "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Tsumego_q1a.png",
+    "notes": "Public domain answer diagram used as an approved acquisition source.",
+    "assets": [
+      {
+        "id": "diagram",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tsumego_q1a.png",
+        "filename": "tsumego-q1-answer.png"
+      }
+    ]
+  },
+  {
+    "id": "wikimedia-hatsuyoron-120",
+    "name": "Wikimedia Commons - Hatsuyoron problem 120",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hatsuyoron_-_problem_120.png",
+    "license": "Public Domain Mark 1.0",
+    "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Hatsuyoron_-_problem_120.png",
+    "notes": "Public domain reproduction of a classical Hatsuyoron diagram.",
+    "assets": [
+      {
+        "id": "diagram",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hatsuyoron_-_problem_120.png",
+        "filename": "hatsuyoron-120.png"
+      }
+    ]
+  }
+]
