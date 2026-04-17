@@ -24,3 +24,4 @@ npm run dev
 - `npm run data:validate`: 라이선스 근거, 카탈로그 매핑, SGF 규약 검사
 - `npm run data:build`: SGF를 런타임 JSON으로 컴파일
 - `npm run verify`: data validate + data build + lint + test + production build
+- GitHub Pages 배포는 `main` 푸시 시 `.github/workflows/pages.yml`에서 자동으로 실행됩니다.
