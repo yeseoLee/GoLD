@@ -9,7 +9,6 @@
   --accent: #0d665e;
   --accent-soft: rgba(13, 102, 94, 0.12);
   --danger: #a83e2e;
-  --danger-soft: rgba(168, 62, 46, 0.12);
   --shadow: 0 24px 60px rgba(74, 53, 26, 0.16);
   font-family: 'IBM Plex Sans KR', 'Pretendard Variable', 'Noto Sans KR', sans-serif;
 }
@@ -38,7 +37,7 @@ button {
 }
 
 .app-shell {
-  width: min(1200px, calc(100vw - 32px));
+  width: min(1240px, calc(100vw - 32px));
   margin: 0 auto;
   padding: 24px 0 48px;
 }
@@ -75,7 +74,7 @@ button {
 .panel-header h2,
 .toolbar-title h2,
 .info-card h3,
-.problem-card h3 {
+.problem-row h3 {
   margin: 0;
   font-family: 'IBM Plex Serif', 'Noto Serif KR', serif;
   line-height: 1.05;
@@ -87,9 +86,10 @@ button {
 
 .hero-copy,
 .section-copy,
-.problem-license,
 .meta-stack,
-.feedback-card p {
+.feedback-card p,
+.problem-row-copy,
+.board-caption {
   color: var(--muted);
   line-height: 1.6;
 }
@@ -109,9 +109,9 @@ button {
 .hero-stats article,
 .info-card,
 .feedback-card,
-.problem-card,
 .filter-grid,
-.board-panel {
+.board-panel,
+.problem-list {
   border: 1px solid var(--line);
   border-radius: 24px;
   background: var(--paper);
@@ -155,19 +155,16 @@ button {
 }
 
 .chip-row,
-.tag-row,
-.problem-meta-row,
 .board-actions,
-.toolbar-actions {
+.toolbar-actions,
+.problem-row-titleline {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 .chip,
-.tag-pill,
 .difficulty-pill,
-.source-pill,
 .solution-counter {
   padding: 9px 14px;
   border-radius: 999px;
@@ -185,31 +182,54 @@ button {
   color: var(--accent);
 }
 
-.problem-grid {
+.problem-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  overflow: hidden;
+}
+
+.problem-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 18px;
-  margin-top: 20px;
+  align-items: center;
+  padding: 20px 24px;
+  border-top: 1px solid rgba(31, 26, 20, 0.08);
 }
 
-.problem-card,
-.board-panel,
-.info-card,
-.feedback-card {
-  padding: 20px;
+.problem-row:first-child {
+  border-top: 0;
 }
 
-.problem-card {
+.problem-row-main {
+  min-width: 0;
   display: grid;
-  gap: 14px;
+  gap: 10px;
 }
 
-.problem-card h3 {
-  font-size: 1.55rem;
+.problem-row-titleline {
+  align-items: center;
 }
 
-.problem-meta-row {
-  justify-content: space-between;
+.problem-row h3 {
+  font-size: 1.7rem;
+}
+
+.problem-row-copy {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.problem-inline-strong,
+.problem-tag-inline {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.problem-row-button {
+  min-width: 180px;
+  white-space: nowrap;
 }
 
 .primary-button,
@@ -244,14 +264,45 @@ button {
   margin-top: 18px;
 }
 
+.board-panel,
+.info-card,
+.feedback-card {
+  padding: 20px;
+}
+
 .board-panel {
   display: grid;
   gap: 18px;
 }
 
 .board-shell {
+  display: grid;
+  gap: 10px;
+}
+
+.board-engine {
+  min-height: 560px;
   width: 100%;
-  aspect-ratio: 1;
+  border-radius: 28px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255, 250, 240, 0.72), rgba(247, 236, 214, 0.92));
+}
+
+.board-engine .Goban {
+  width: 100%;
+  height: 100%;
+}
+
+.board-engine canvas,
+.board-engine svg {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.board-caption {
+  margin: 0;
+  font-size: 0.92rem;
 }
 
 .side-panel {
@@ -310,7 +361,8 @@ button {
 
 @media (max-width: 960px) {
   .hero-panel,
-  .play-layout {
+  .play-layout,
+  .problem-row {
     grid-template-columns: 1fr;
   }
 
@@ -318,6 +370,10 @@ button {
   .toolbar {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .problem-row-button {
+    width: 100%;
   }
 }
 
@@ -328,10 +384,18 @@ button {
   }
 
   .hero-panel,
-  .problem-card,
   .board-panel,
   .info-card,
-  .feedback-card {
+  .feedback-card,
+  .problem-row {
     padding: 18px;
+  }
+
+  .board-engine {
+    min-height: 360px;
+  }
+
+  .problem-row h3 {
+    font-size: 1.38rem;
   }
 }

@@ -6,12 +6,6 @@ const base = process.env.BASE_PATH ?? '/'
 export default defineConfig({
   base,
   plugins: [react()],
-  resolve: {
-    alias: [
-      { find: 'preact/hooks', replacement: 'react' },
-      { find: 'preact', replacement: 'react' },
-    ],
-  },
   test: {
     globals: true,
     environment: 'jsdom',
