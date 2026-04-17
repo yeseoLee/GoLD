@@ -23,5 +23,6 @@ npm run dev
 - `npm run data:fetch`: 승인된 공개 소스 원본을 `data/raw/`에 내려받기
 - `npm run data:validate`: 라이선스 근거, 카탈로그 매핑, SGF 규약 검사
 - `npm run data:build`: SGF를 런타임 JSON으로 컴파일
+- 보드 렌더링은 [online-go/goban](https://github.com/online-go/goban) Apache-2.0 엔진과 그 Anime stone 리소스를 사용합니다.
 - `npm run verify`: data validate + data build + lint + test + production build
 - GitHub Pages 배포는 `main` 푸시 시 `.github/workflows/pages.yml`에서 자동으로 실행됩니다.

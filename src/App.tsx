@@ -32,6 +32,7 @@ export default function App() {
   const [solutionPath, setSolutionPath] = useState<string[]>(problems[0] ? buildSolutionPath(problems[0]) : [])
   const [solutionStep, setSolutionStep] = useState(0)
   const [feedback, setFeedback] = useState<FeedbackState>({ kind: 'idle' })
+  const [boardRevision, setBoardRevision] = useState(0)
 
   const tags = getProblemTags(problems)
   const filteredProblems = problems.filter((problem) => {
@@ -58,12 +59,14 @@ export default function App() {
     setSolutionPath(nextSolutionPath)
     setSolutionStep(0)
     setFeedback({ kind: 'idle' })
+    setBoardRevision((current) => current + 1)
     setScreen(nextScreen)
   }
 
   function resetProblem() {
     setPath([activeProblem.rootNodeId])
     setFeedback({ kind: 'idle' })
+    setBoardRevision((current) => current + 1)
     setScreen('play')
   }
 
@@ -79,6 +82,7 @@ export default function App() {
       kind: result.kind === 'wrong' ? 'wrong' : result.kind === 'solved' ? 'solved' : 'correct',
       message: result.message,
     })
+    setBoardRevision((current) => current + 1)
 
     if (result.kind !== 'wrong') {
       setPath(result.path)
@@ -92,7 +96,7 @@ export default function App() {
           <p className="eyebrow">Go Life and Death</p>
           <h1>GoLD</h1>
           <p className="hero-copy">
-            승인된 공개 출처를 기반으로 수집한 자료와 저장소 소유 SGF만 사용해, 사활 급소를 빠르게 읽는 정적 웹앱입니다.
+            공개 오픈소스 SGF 문제집과 오픈소스 보드 엔진을 묶어, 사활 급소를 빠르게 읽는 훈련용 웹앱으로 재구성했습니다.
           </p>
         </div>
         <div className="hero-stats">
@@ -105,8 +109,8 @@ export default function App() {
             <span>태그 종류</span>
           </article>
           <article>
-            <strong>정적</strong>
-            <span>백엔드 없이 실행</span>
+            <strong>OGS Goban</strong>
+            <span>오픈소스 캔버스 보드</span>
           </article>
         </div>
       </section>
@@ -116,9 +120,9 @@ export default function App() {
           <div className="panel-header">
             <div>
               <p className="section-kicker">문제 목록</p>
-              <h2>초급부터 중급까지 바로 풀이</h2>
+              <h2>줄글형 목록으로 빠르게 훑기</h2>
             </div>
-            <p className="section-copy">난이도와 태그로 좁힌 뒤 바로 들어가서 정답 수순만 연습할 수 있습니다.</p>
+            <p className="section-copy">카드 그리드 대신 한 줄씩 읽히는 목록으로 바꿔, 난이도와 태그를 걸고 바로 문제를 집어들 수 있게 했습니다.</p>
           </div>
 
           <div className="filter-grid">
@@ -153,28 +157,31 @@ export default function App() {
             </div>
           </div>
 
-          <div className="problem-grid">
+          <ol className="problem-list">
             {filteredProblems.map((problem) => (
-              <article className="problem-card" key={problem.id}>
-                <div className="problem-meta-row">
-                  <span className="difficulty-pill">{difficultyLabels[problem.difficulty]}</span>
-                  <span className="source-pill">{problem.sourceId}</span>
+              <li className="problem-row" key={problem.id}>
+                <div className="problem-row-main">
+                  <div className="problem-row-titleline">
+                    <h3>{problem.titleKo}</h3>
+                    <span className="difficulty-pill">{difficultyLabels[problem.difficulty]}</span>
+                  </div>
+                  <p className="problem-row-copy">
+                    출처 <span className="problem-inline-strong">{problem.sourceId}</span>에서 가져온 {problem.license} 문제입니다. 태그는{' '}
+                    {problem.tags.map((tag, index) => (
+                      <span key={tag}>
+                        <span className="problem-tag-inline">#{tag}</span>
+                        {index < problem.tags.length - 1 ? ', ' : ''}
+                      </span>
+                    ))}
+                    입니다.
+                  </p>
                 </div>
-                <h3>{problem.titleKo}</h3>
-                <p className="problem-license">{problem.license}</p>
-                <div className="tag-row">
-                  {problem.tags.map((tag) => (
-                    <span className="tag-pill" key={tag}>
-                      #{tag}
-                    </span>
-                  ))}
-                </div>
-                <button className="primary-button" onClick={() => openProblem(problem, 'play')} type="button">
+                <button className="primary-button problem-row-button" onClick={() => openProblem(problem, 'play')} type="button">
                   {problem.titleKo} 시작
                 </button>
-              </article>
+              </li>
             ))}
-          </div>
+          </ol>
         </section>
       )}
 
@@ -200,7 +207,13 @@ export default function App() {
 
           <div className="play-layout">
             <section className="board-panel">
-              <GobanBoard interactive={screen === 'play'} onPlay={handlePlay} path={displayedPath} problem={activeProblem} />
+              <GobanBoard
+                interactive={screen === 'play'}
+                onPlay={handlePlay}
+                path={displayedPath}
+                problem={activeProblem}
+                revision={boardRevision}
+              />
               {screen === 'play' && (
                 <div className="board-actions">
                   <button className="ghost-button" onClick={resetProblem} type="button">

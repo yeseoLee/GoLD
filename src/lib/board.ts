@@ -1,6 +1,6 @@
-import type { Vertex } from '@sabaki/shudan/src/main.js'
 import type { StoneColor } from './types'
 
+export type Vertex = [number, number]
 export type Sign = -1 | 0 | 1
 export type SignMap = Sign[][]
 
